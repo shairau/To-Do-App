@@ -1,0 +1,187 @@
+:root {
+    --darkest-green: #1b4332;
+    --dark-green: #2d6a4f;
+    --medium-green: #40916c;
+    --light-green: #52b788;
+    --lighter-green: #74c69d;
+    --lightest-green: #b7e4c7;
+    --bg-green: #d8f3dc;
+}
+
+body {
+    background-color: var(--bg-green);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: var(--darkest-green);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    color: var(--darkest-green);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#currentDate {
+    text-align: center;
+    color: var(--dark-green);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--medium-green);
+}
+
+.input-container {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 12px 16px;
+    width: 100%;
+    border: 2px solid var(--lightest-green);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--medium-green);
+    box-shadow: 0 0 5px var(--lightest-green);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid var(--lightest-green);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: var(--bg-green);
+}
+
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    accent-color: var(--medium-green);
+}
+
+li span {
+    margin: 0 10px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: var(--lighter-green);
+}
+
+li button {
+    padding: 8px 12px;
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+li button:hover {
+    background-color: var(--darkest-green);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+li {
+    animation: fadeIn 0.3s ease;
+}
+
+.completed-section {
+    margin-top: 20px;
+    border-top: 1px solid var(--lightest-green);
+    padding-top: 10px;
+    opacity: 0.8;
+    font-size: 0.9em;
+}
+
+.completed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.completed-header:hover {
+    background-color: var(--bg-green);
+    border-radius: 8px;
+}
+
+.completed-header h3 {
+    margin: 0;
+    color: var(--dark-green);
+    font-size: 1.2em;
+}
+
+.toggle-icon {
+    color: var(--dark-green);
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotated {
+    transform: rotate(-180deg);
+}
+
+.hidden {
+    display: none;
+}
+
+#completedList li {
+    padding: 8px;
+    background-color: var(--bg-green);
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+#completedList button {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+#completedList .completed-date {
+    font-size: 0.8em;
+    color: var(--dark-green);
+    margin-right: 10px;
+} 

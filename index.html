@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shaivi's Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Shaivi's 2Do</h1>
+        <div id="currentDate"></div>
+        
+        <div class="section">
+            <div class="input-container">
+                <input type="text" id="todoInput" placeholder="Enter a task">
+            </div>
+            <ul id="todoList"></ul>
+            
+            <div class="completed-section">
+                <div class="completed-header" onclick="toggleCompletedSection()">
+                    <h3>Completed Tasks</h3>
+                    <span class="toggle-icon">▾</span>
+                </div>
+                <ul id="completedList" class="hidden"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html> 
